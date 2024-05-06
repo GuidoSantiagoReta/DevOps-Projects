@@ -4,15 +4,15 @@
 
 
 
-# Devops-project-01  (Terraform, AWS EC2)
+## Devops-project-01  (Terraform, AWS EC2)
 
 __Crear infraestructura con terraform y AWS EC2__
 
-## Documentación de Levantamiento de Instancia EC2 con Terraform
+### Documentación de Levantamiento de Instancia EC2 con Terraform
 
 Este documento describe el proceso para levantar una instancia EC2 en AWS utilizando Terraform. Se utilizarán los comandos `terraform init`, `terraform plan`, y `terraform apply` para realizar esta tarea.
 
-## Preparación
+### Preparación
 
 Antes de comenzar, asegúrate de tener lo siguiente:
 
@@ -34,7 +34,7 @@ resource "aws_instance" "example"{
 }
 }
 ```
-## Proceso de eliminación
+### Proceso de eliminación
 Finalmente relizamos el destroy por terminal con el comando ` terraform destroy`
 
 __Consideraciones__:
@@ -44,7 +44,7 @@ Seguridad: Asegúrate de que no haya datos sensibles o aplicaciones en ejecució
 
 __Conclusión__:
 Con estos pasos, has aprendido cómo levantar y eliminar una instancia EC2 en AWS utilizando Terraform. Este proceso te permite gestionar eficientemente tus recursos de infraestructura como código, facilitando la creación, modificación y eliminación de recursos según sea necesario.
-## Capturas:
+### Capturas:
 ![terraform-ec2-instance](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/1940c89b-ba2d-4da5-9eb3-e150414ba9aa)
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/c9cd4e78-f210-4dc8-86dc-cec4bd5f816b)
 
