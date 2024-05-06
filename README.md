@@ -1,6 +1,6 @@
 # Repositorio dedicado a proyectos Devops / DevSecOps
 
-# Índice
+## Índice:
 
 - [Devops-project-01](#devops-project-01--terraform-aws-ec2)
   - [Documentación de Levantamiento de Instancia EC2 con Terraform](#documentación-de-levantamiento-de-instancia-ec2-con-terraform)
@@ -12,9 +12,9 @@
 
 
 
-## Devops-project-01  (Terraform, AWS EC2)
+# Devops-project-01  (Terraform, AWS EC2)
 
-__Crear infraestructura con terraform y AWS EC2__
+## __Crear infraestructura con terraform y AWS EC2__
 
 ### Documentación de Levantamiento de Instancia EC2 con Terraform
 
