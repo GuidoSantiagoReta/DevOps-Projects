@@ -1,6 +1,14 @@
 # Repositorio dedicado a proyectos Devops / DevSecOps
 
+# Índice
 
+- [Devops-project-01](#devops-project-01--terraform-aws-ec2)
+  - [Documentación de Levantamiento de Instancia EC2 con Terraform](#documentación-de-levantamiento-de-instancia-ec2-con-terraform)
+  - [Preparación](#preparación)
+  - [Proceso de eliminación](#proceso-de-eliminación)
+  - [Consideraciones](#consideraciones)
+  - [Conclusión](#conclusión)
+  - [Capturas](#capturas)
 
 
 
@@ -37,14 +45,14 @@ resource "aws_instance" "example"{
 ### Proceso de eliminación
 Finalmente relizamos el destroy por terminal con el comando ` terraform destroy`
 
-__Consideraciones__:
+#### Consideraciones:
 - Revisión del Plan de Destrucción: Al igual que con el plan de aplicación, es crucial revisar el plan de destrucción para asegurarte de que Terraform tiene entendido correctamente qué recursos eliminar.
 Seguridad: Asegúrate de que no haya datos sensibles o aplicaciones en ejecución en la instancia EC2 antes de proceder con la eliminación.
 - Costos: La eliminación de recursos puede liberar recursos de computación y almacenamiento, reduciendo así los costos asociados.
 
-__Conclusión__:
+#### Conclusión:
 Con estos pasos, has aprendido cómo levantar y eliminar una instancia EC2 en AWS utilizando Terraform. Este proceso te permite gestionar eficientemente tus recursos de infraestructura como código, facilitando la creación, modificación y eliminación de recursos según sea necesario.
-### Capturas:
+#### Capturas:
 ![terraform-ec2-instance](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/1940c89b-ba2d-4da5-9eb3-e150414ba9aa)
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/c9cd4e78-f210-4dc8-86dc-cec4bd5f816b)
 
