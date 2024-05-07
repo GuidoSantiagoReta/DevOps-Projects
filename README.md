@@ -20,7 +20,7 @@
 
 Este documento describe el proceso para levantar una instancia EC2 en AWS utilizando Terraform. Se utilizarán los comandos `terraform init`, `terraform plan`, y `terraform apply` para realizar esta tarea.
 
-### Preparación
+### Preparación:
 
 Antes de comenzar, asegúrate de tener lo siguiente:
 
@@ -42,7 +42,7 @@ resource "aws_instance" "example"{
 }
 }
 ```
-### Proceso de eliminación
+### Proceso de eliminación:
 Finalmente relizamos el destroy por terminal con el comando ` terraform destroy`
 
 #### Consideraciones:
