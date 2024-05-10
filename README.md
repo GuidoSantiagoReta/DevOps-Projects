@@ -85,7 +85,7 @@ Una vez creado el proyecto, SonarCloud generará un archivo de configuración es
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/19de9c99-10ed-4011-8604-a87dc849bddb)
 
 
-#Devops-project-03 (Configuración de Terraform para AWS S3 Bucket)
+# Devops-project-03 (Configuración de Terraform para AWS S3 Bucket)
 
 
 ## Objetivo
