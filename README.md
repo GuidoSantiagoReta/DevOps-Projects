@@ -25,7 +25,7 @@
     - [Crear el archivo `main.tf`](#crear-el-archivo-maintf)
     - [Instalar una instancia S3](#instalar-una-instancia-s3)
 
-## Devops-project-01  (Terraform, AWS EC2)
+# Devops-project-01  (Terraform, AWS EC2)
 
 ### Documentación de Levantamiento de Instancia EC2 con Terraform
 
@@ -54,7 +54,7 @@ Con estos pasos, has aprendido cómo levantar y eliminar una instancia EC2 en AW
 ![terraform-ec2-instance](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/1940c89b-ba2d-4da5-9eb3-e150414ba9aa)
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/c9cd4e78-f210-4dc8-86dc-cec4bd5f816b)
 
-## Devops-project-02 (SonarCloud, Node.js, Express)
+# Devops-project-02 (SonarCloud, Node.js, Express)
 
 ### Documentación de Configuración de SonarCloud
 
