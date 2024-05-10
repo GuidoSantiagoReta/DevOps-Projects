@@ -15,7 +15,7 @@
   - [Adicionales](#adicionales)
   - [Capturas](#capturas)
 - [Devops-project-03](#devops-project-03--configuración-de-terraform-para-aws-s3-bucket)
-  - [Objetivo](#objetivo)
+  - [Configurar un bucket S3 en AWS utilizando Terraform ](#objetivo) 
   - [Requisitos](#requisitos)
   - [Pasos para configurar Terraform en Windows o Linux](#pasos-para-configurar-terraform-en-windows-o-linux)
     - [Instalación de Chocolatey como Administrador PowerShell](#instalación-de-chocolatey-como-administrador-powershell)
@@ -89,7 +89,7 @@ Una vez creado el proyecto, SonarCloud generará un archivo de configuración es
 
 
 ## Objetivo
-Configurar un bucket S3 en AWS utilizando Terraform para almacenar documentación del README en un repositorio de proyectos DevOps.
+Configurar un bucket S3 en AWS utilizando Terraform.
 
 ## Requisitos
 - Terraform instalado en Windows o Linux.
