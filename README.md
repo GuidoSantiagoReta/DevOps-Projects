@@ -135,3 +135,6 @@ powershell [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.Serv
 2. Ejecuta `terraform plan` para ver un resumen de lo que Terraform hará.
 3. Ejecuta `terraform apply` para crear el bucket S3 en AWS.
 4. Una vez que hayas terminado, puedes eliminar los recursos creados con `terraform destroy`.
+
+### Capturas
+![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/e9671465-ed95-45b9-8a12-c7fdb3ed7109)
