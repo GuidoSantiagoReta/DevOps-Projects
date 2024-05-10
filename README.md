@@ -14,6 +14,16 @@
   - [Pasos para configurar SonarCloud](#pasos-para-configurar-sonarcloud)
   - [Adicionales](#adicionales)
   - [Capturas](#capturas)
+- [Devops-project-03](#devops-project-03--configuración-de-terraform-para-aws-s3-bucket)
+  - [Objetivo](#objetivo)
+  - [Requisitos](#requisitos)
+  - [Pasos para configurar Terraform en Windows o Linux](#pasos-para-configurar-terraform-en-windows-o-linux)
+    - [Instalación de Chocolatey como Administrador PowerShell](#instalación-de-chocolatey-como-administrador-powershell)
+    - [Instalación de Terraform](#instalación-de-terraform)
+    - [Configuración de las Credenciales AWS](#configuración-de-las-credenciales-aws)
+    - [Configuración de AWS CLI](#configuración-de-aws-cli)
+    - [Crear el archivo `main.tf`](#crear-el-archivo-maintf)
+    - [Instalar una instancia S3](#instalar-una-instancia-s3)
 
 ## Devops-project-01  (Terraform, AWS EC2)
 
@@ -74,3 +84,54 @@ Una vez creado el proyecto, SonarCloud generará un archivo de configuración es
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/ccc52ba9-648f-4c9b-9e86-310375abb775)
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/19de9c99-10ed-4011-8604-a87dc849bddb)
 
+
+#Devops-project-03 (Configuración de Terraform para AWS S3 Bucket)
+
+
+## Objetivo
+Configurar un bucket S3 en AWS utilizando Terraform para almacenar documentación del README en un repositorio de proyectos DevOps.
+
+## Requisitos
+- Terraform instalado en Windows o Linux.
+- Cuenta de AWS con acceso IAM o root de Academy.
+- Acceso a un repositorio de proyectos DevOps.
+
+## Pasos para configurar Terraform en Windows o Linux
+
+### Instalación de Chocolatey como Administrador PowerShell
+
+1. Abre PowerShell como administrador.
+2. Ejecuta el siguiente comando para permitir la ejecución de scripts:
+
+`powershell Set-ExecutionPolicy Bypass -Scope Process -Force`
+
+3. Establece el protocolo de seguridad para permitir la descarga de scripts:
+
+```
+powershell [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+
+```
+
+### Instalación de Terraform
+1. Utiliza Chocolatey para instalar Terraform especificando la versión deseada:
+
+2. Sigue las instrucciones para ingresar tu `AWS Access Key ID`, `AWS Secret Access Key`, y selecciona la región predeterminada.
+
+### Configuración de AWS CLI
+
+1. Descarga e instala el AWS CLI desde el siguiente enlace:
+   [AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi).
+
+2. Configura AWS CLI siguiendo los mismos pasos que en el paso anterior.
+
+### Crear el archivo `main.tf`
+
+1. Crea un nuevo archivo llamado `main.tf` en tu directorio de trabajo.
+2. Agrega el código de Terraform para crear un bucket S3, similar al que proporcionaste, pero asegúrate de reemplazar los valores de `bucket`, `Name`, y `Environment` según sea necesario.
+
+### Instalar una instancia S3
+
+1. Ejecuta `terraform init` para inicializar tu directorio de Terraform.
+2. Ejecuta `terraform plan` para ver un resumen de lo que Terraform hará.
+3. Ejecuta `terraform apply` para crear el bucket S3 en AWS.
+4. Una vez que hayas terminado, puedes eliminar los recursos creados con `terraform destroy`.
