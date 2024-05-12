@@ -25,7 +25,7 @@
     - [Crear el archivo `main.tf`](#crear-el-archivo-maintf)
     - [Instalar una instancia S3](#instalar-una-instancia-s3)
 - [Devops-project-04](#devops-project-04--practica-devops-crear-app-node-js)
-  - [Descripción del Proyecto](#descripción-del-proyecto)
+  - [Descripción del Proyecto - App Node.js y pipeline (CI) para automatizar compilación y test](#descripción-del-proyecto)
   - [Requisitos](#requisitos)
   - [Pasos para crear la aplicación Node.js](#pasos-para-crear-la-aplicación-node-js)
   - [Creación de un Pipeline de Integración Continua (CI)](#creación-de-un-pipeline-de-integración-continua-ci)
