@@ -185,3 +185,6 @@ Este proyecto consiste en crear una aplicación Node.js simple, configurarla par
 3. **Ejecutar tests**: Ejecuta `npm test` para probar el funcionamiento de tu aplicación.
 
 ## Capturas:
+
+
+## probando pipeline
