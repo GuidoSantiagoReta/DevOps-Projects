@@ -24,6 +24,15 @@
     - [Configuración de AWS CLI](#configuración-de-aws-cli)
     - [Crear el archivo `main.tf`](#crear-el-archivo-maintf)
     - [Instalar una instancia S3](#instalar-una-instancia-s3)
+- [Devops-project-04](#devops-project-04--practica-devops-crear-app-node-js)
+  - [Descripción del Proyecto](#descripción-del-proyecto)
+  - [Requisitos](#requisitos)
+  - [Pasos para crear la aplicación Node.js](#pasos-para-crear-la-aplicación-node-js)
+  - [Creación de un Pipeline de Integración Continua (CI)](#creación-de-un-pipeline-de-integración-continua-ci)
+  - [Creación de Tests con Jest](#creación-de-tests-con-jest)
+  - [Capturas](#capturas)
+
+
 
 # Devops-project-01  (Terraform, AWS EC2)
 
@@ -138,3 +147,41 @@ powershell [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.Serv
 
 ### Capturas
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/e9671465-ed95-45b9-8a12-c7fdb3ed7109)
+
+# Devops-project-04 (Crear App Node.js y pipeline de integración continua (CI) para automatizar la compilación y prueba de la aplicación).
+
+## Descripción del Proyecto
+
+Este proyecto consiste en crear una aplicación Node.js simple, configurarla para su desarrollo y despliegue, y establecer un pipeline de integración continua (CI) para automatizar la compilación y prueba de la aplicación.
+
+## Requisitos
+
+- Node.js instalado.
+- Git instalado.
+- Acceso a un repositorio de proyectos DevOps.
+
+## Pasos para crear la aplicación Node.js
+
+1. **Inicializar el proyecto**: Ejecuta `npm init` para crear un nuevo proyecto Node.js.
+2. **Crear el punto de entrada**: Crea un archivo `app.js` como punto de entrada de la aplicación.
+3. **Instalar dependencias**: Instala Express y Nodemon como dependencias necesarias con `npm install express nodemon`.
+4. **Configurar el servidor**: Requiere Express en `app.js` y configura un servidor básico.
+5. **Realizar peticiones**: Realiza una petición para comprobar que el servidor está funcionando correctamente.
+6. **Ignorar archivos innecesarios**: Crea un archivo `.gitignore` para evitar subir archivos innecesarios al repositorio remoto.
+7. **Subir al repositorio**: Realiza un `git add` de los archivos en la rama específica y haz los commits correspondientes.
+
+## Creación de un Pipeline de Integración Continua (CI)
+
+1. **Configurar `nodejs-ci.yml`**: Define las etapas y trabajos que se ejecutarán en el pipeline CI/CD.
+2. **Especificar la imagen Docker**: Usa `image: node:14` para definir la imagen Docker que se utilizará.
+3. **Definir las etapas**: Define las etapas del pipeline con `stages`.
+4. **Antes de los trabajos**: Define comandos que se ejecutan antes de todos los trabajos con `before_script`.
+5. **Compilación y pruebas**: Define trabajos para la etapa de compilación (`build`) y pruebas (`test`).
+
+## Creación de Tests con Jest
+
+1. **Instalar dependencias de desarrollo**: Instala Jest, Supertest, y Cross-env con `npm install --save-dev jest supertest cross-env`.
+2. **Escribir tests**: Escribe tests para tu aplicación utilizando Jest.
+3. **Ejecutar tests**: Ejecuta `npm test` para probar el funcionamiento de tu aplicación.
+
+## Capturas:
