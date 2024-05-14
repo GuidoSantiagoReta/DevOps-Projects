@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        path: DevOps-Projects/devops-projects-04
+        path: devops-projects-04
     - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
@@ -30,7 +30,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        path: DevOps-Projects/devops-projects-04
+        path: devops-projects-04
     - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
@@ -39,4 +39,3 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
-
