@@ -1,6 +1,12 @@
 name: Node.js CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -8,15 +14,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        path: DevOps-Projects/devops-projects-04
+        path: devops-projects-04
     - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
         node-version: 14
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd devops-projects-04
+        npm install
     - name: Build
-      run: npm run build --if-present
+      run: |
+        cd devops-projects-04
+        npm run build --if-present
 
   test:
     needs: build
@@ -24,12 +34,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        path: DevOps-Projects/devops-projects-04
+        path: devops-projects-04
     - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
         node-version: 14
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd devops-projects-04
+        npm install
     - name: Test
-      run: npm test
+      run: |
+        cd devops-projects-04
+        npm test
