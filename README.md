@@ -186,3 +186,4 @@ Este proyecto consiste en crear una aplicación Node.js simple, configurarla par
 
 ## Capturas:
 ![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/898ef294-f43c-4a63-a5ef-e437348e6669)
+![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/2d340b6a-48d8-45ec-8340-e98886b1a4bb)
