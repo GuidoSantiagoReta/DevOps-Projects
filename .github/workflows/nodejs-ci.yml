@@ -20,13 +20,9 @@ jobs:
       with:
         node-version: 14
     - name: Install dependencies
-      run: |
-        cd devops-projects-04
-        npm install
+      run: npm install --prefix devops-projects-04
     - name: Build
-      run: |
-        cd devops-projects-04
-        npm run build --if-present
+      run: npm run build --if-present --prefix devops-projects-04
 
   test:
     needs: build
@@ -40,10 +36,6 @@ jobs:
       with:
         node-version: 14
     - name: Install dependencies
-      run: |
-        cd devops-projects-04
-        npm install
+      run: npm install --prefix devops-projects-04
     - name: Test
-      run: |
-        cd devops-projects-04
-        npm test
+      run: npm test --prefix devops-projects-04
