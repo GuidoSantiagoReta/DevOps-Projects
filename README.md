@@ -185,6 +185,4 @@ Este proyecto consiste en crear una aplicación Node.js simple, configurarla par
 3. **Ejecutar tests**: Ejecuta `npm test` para probar el funcionamiento de tu aplicación.
 
 ## Capturas:
-
-
-## probando pipeline
+![image](https://github.com/GuidoSantiagoReta/DevOps-Projects/assets/46303885/898ef294-f43c-4a63-a5ef-e437348e6669)
