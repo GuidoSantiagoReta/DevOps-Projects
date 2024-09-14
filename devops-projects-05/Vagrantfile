@@ -1,0 +1,43 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Selección de la caja (Debian 11 Bullseye)
+  config.vm.box = "debian/bullseye64"
+
+  # Desactivar la verificación automática de actualización de la caja
+  # config.vm.box_check_update = false
+
+  # Redirigir puertos
+  # Acceso a "localhost:8080" para acceder al puerto 80 en la máquina virtual
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  # Permitir acceso solo a través de localhost
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Crear una red privada, con acceso solo desde el host
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # Crear una red pública para que la máquina virtual sea visible como un dispositivo físico en la red
+  # config.vm.network "public_network"
+
+  # Compartir una carpeta adicional en la máquina virtual
+  # config.vm.synced_folder "../data", "/vagrant_data"
+
+  # Desactivar el compartir la carpeta por defecto para mejorar el aislamiento
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # Configuración específica del proveedor VirtualBox
+  config.vm.provider "virtualbox" do |vb|
+    # Habilitar la interfaz gráfica
+    vb.gui = true
+    
+    # Personalizar la cantidad de memoria asignada a la máquina virtual
+    vb.memory = "1024"
+  end
+
+  # Provisionamiento con script (desactivado por defecto)
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   apt-get update
+  #   apt-get install -y apache2
+  # SHELL
+end
