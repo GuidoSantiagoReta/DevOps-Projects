@@ -198,7 +198,7 @@ Este proyecto consiste en crear una aplicación Node.js simple, configurarla par
 
 
 
-# Devops project 05 Descargar e instalar vagrant en windows
+# Devops-project-05 Descargar e instalar vagrant en windows
 
 - Descargar el instalador: https://developer.hashicorp.com/vagrant/install
   
